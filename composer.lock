@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c808afe859d52d8270a674d95a75bfe7",
+    "hash": "860e86d3d528dd7b0e87de022b3bfccb",
     "packages": [
         {
             "name": "davidbarratt/custom-installer",
@@ -77,16 +77,16 @@
         },
         {
             "name": "davidbarratt/drupal-structure",
-            "version": "dev-master",
+            "version": "1.0.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/davidbarratt/drupal-structure.git",
-                "reference": "f1e1330f35c06b257e655a46be42bca3d827719a"
+                "reference": "04cf1472e66171d9b227fc0c4ed5092722f4432b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davidbarratt/drupal-structure/zipball/f1e1330f35c06b257e655a46be42bca3d827719a",
-                "reference": "f1e1330f35c06b257e655a46be42bca3d827719a",
+                "url": "https://api.github.com/repos/davidbarratt/drupal-structure/zipball/04cf1472e66171d9b227fc0c4ed5092722f4432b",
+                "reference": "04cf1472e66171d9b227fc0c4ed5092722f4432b",
                 "shasum": ""
             },
             "require": {
@@ -107,14 +107,7 @@
                     "DavidBarratt\\DrupalStructure\\": ""
                 }
             },
-            "scripts": {
-                "post-install-cmd": [
-                    "DavidBarratt\\DrupalStructure\\ScriptHandler::postUpdate"
-                ],
-                "post-update-cmd": [
-                    "DavidBarratt\\DrupalStructure\\ScriptHandler::postUpdate"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
             ],
@@ -127,11 +120,7 @@
             ],
             "description": "Giving Drupal 6 & 7 a Directory Sturcture like Drupal 8 via Composer",
             "homepage": "https://github.com/davidbarratt/drupal-structure",
-            "support": {
-                "source": "https://github.com/davidbarratt/drupal-structure/tree/master",
-                "issues": "https://github.com/davidbarratt/drupal-structure/issues"
-            },
-            "time": "2014-09-14 04:21:56"
+            "time": "2014-09-27 16:44:09"
         },
         {
             "name": "drupal/advanced_help",
@@ -630,7 +619,7 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "davidbarratt/drupal-structure": 20,
+        "davidbarratt/drupal-structure": 15,
         "davidbarratt/custom-installer": 15,
         "davidbarratt/davidwbarratt": 20
     },

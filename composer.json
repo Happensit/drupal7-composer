@@ -14,7 +14,7 @@
   ],
   "require": {
     "mnsami/composer-custom-directory-installer": "1.0.*",
-    "davidbarratt/drupal-structure": "dev-master",
+    "davidbarratt/drupal-structure": "1.0.*@alpha",
     "davidbarratt/custom-installer": "1.0.*@alpha",
     "davidbarratt/davidwbarratt": "dev-develop"
   },
@@ -26,10 +26,6 @@
       },
       "installer-paths":{
         "core/": ["drupal/drupal"]
-      },
-      "drupal-structure": {
-        "root": "",
-        "core": "core"
       }
   },
   "scripts": {
