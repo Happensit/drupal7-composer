@@ -1,0 +1,47 @@
+{
+  "name": "davidbarratt/drupal7",
+  "description": "Drupal 7 Platform for David Barratt",
+  "licsense": "AGPL-3.0",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://static.drupal-packagist.org/v0.2.0/"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:davidbarratt/davidwbarratt.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:davidbarratt/drupal-structure.git"
+    }
+  ],
+  "require": {
+    "mnsami/composer-custom-directory-installer": "1.0.*",
+    "davidbarratt/drupal-structure": "dev-master",
+    "davidbarratt/custom-installer": "1.0.*@alpha",
+    "davidbarratt/davidwbarratt": "dev-develop"
+  },
+  "extra": {
+      "custom-installer": {
+          "drupal-core": "core/",
+          "drupal-site": "sites/{$name}/",
+          "drupal-module": "modules/{$name}/"
+      },
+      "installer-paths":{
+        "core/": ["drupal/drupal"]
+      },
+      "drupal-structure": {
+        "root": "",
+        "core": "core"
+      }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "DavidBarratt\\DrupalStructure\\ScriptHandler::postUpdate"
+    ],
+    "post-update-cmd": [
+      "DavidBarratt\\DrupalStructure\\ScriptHandler::postUpdate"
+    ]
+  }
+}

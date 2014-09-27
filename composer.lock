@@ -1,0 +1,644 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "c808afe859d52d8270a674d95a75bfe7",
+    "packages": [
+        {
+            "name": "davidbarratt/custom-installer",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/davidbarratt/custom-installer.git",
+                "reference": "1961a377c6e4435301f225154d17fe1f3d0f2ea7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/davidbarratt/custom-installer/zipball/1961a377c6e4435301f225154d17fe1f3d0f2ea7",
+                "reference": "1961a377c6e4435301f225154d17fe1f3d0f2ea7",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "1.0.0"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "DavidBarratt\\CustomInstaller\\CustomInstallerPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "DavidBarratt\\CustomInstaller\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Install custom types into custom locations.",
+            "homepage": "https://github.com/davidbarratt/custom-installer",
+            "time": "2014-09-01 15:46:17"
+        },
+        {
+            "name": "davidbarratt/davidwbarratt",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/davidbarratt/davidwbarratt.git",
+                "reference": "b694e714ccd874c2aa20ddfe81d709f0340a9174"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/davidbarratt/davidwbarratt/zipball/b694e714ccd874c2aa20ddfe81d709f0340a9174",
+                "reference": "b694e714ccd874c2aa20ddfe81d709f0340a9174",
+                "shasum": ""
+            },
+            "require": {
+                "davidbarratt/custom-installer": "1.0.*@alpha",
+                "drupal/drupal": "~7.0",
+                "drupal/pathauto": "~7.0",
+                "drupal/views": "~7.0"
+            },
+            "type": "drupal-site",
+            "license": [
+                "AGPL-3.0"
+            ],
+            "description": "davidwbarratt.com website",
+            "support": {
+                "source": "https://github.com/davidbarratt/davidwbarratt/tree/develop",
+                "issues": "https://github.com/davidbarratt/davidwbarratt/issues"
+            },
+            "time": "2014-09-01 16:44:25"
+        },
+        {
+            "name": "davidbarratt/drupal-structure",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/davidbarratt/drupal-structure.git",
+                "reference": "f1e1330f35c06b257e655a46be42bca3d827719a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/davidbarratt/drupal-structure/zipball/f1e1330f35c06b257e655a46be42bca3d827719a",
+                "reference": "f1e1330f35c06b257e655a46be42bca3d827719a",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/filesystem": "~2.0",
+                "symfony/finder": "~2.0"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@alpha"
+            },
+            "type": "library",
+            "extra": {
+                "drupal-structure": {
+                    "root": "web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DavidBarratt\\DrupalStructure\\": ""
+                }
+            },
+            "scripts": {
+                "post-install-cmd": [
+                    "DavidBarratt\\DrupalStructure\\ScriptHandler::postUpdate"
+                ],
+                "post-update-cmd": [
+                    "DavidBarratt\\DrupalStructure\\ScriptHandler::postUpdate"
+                ]
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "David Barratt",
+                    "email": "david@davidwbarratt.com",
+                    "homepage": "http://davidwbarratt.com"
+                }
+            ],
+            "description": "Giving Drupal 6 & 7 a Directory Sturcture like Drupal 8 via Composer",
+            "homepage": "https://github.com/davidbarratt/drupal-structure",
+            "support": {
+                "source": "https://github.com/davidbarratt/drupal-structure/tree/master",
+                "issues": "https://github.com/davidbarratt/drupal-structure/issues"
+            },
+            "time": "2014-09-14 04:21:56"
+        },
+        {
+            "name": "drupal/advanced_help",
+            "version": "7.1.1",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/advanced_help",
+                "reference": "e5c25ae431f03a6c6146a581d739f1a0048175db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/advanced_help-7.x-1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/help_example": "self.version"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "description": "Allow advanced help and documentation."
+        },
+        {
+            "name": "drupal/ctools",
+            "version": "7.1.4",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/ctools",
+                "reference": "5438b40dbe532af6a7eca891c86eaef845bff945"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/ctools-7.x-1.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/advanced_help": "7.*",
+                "drupal/color": "7.*",
+                "drupal/drupal": "7.*",
+                "drupal/panels": "7.*",
+                "drupal/views": "7.*"
+            },
+            "replace": {
+                "drupal/bulk_export": "self.version",
+                "drupal/ctools_access_ruleset": "self.version",
+                "drupal/ctools_ajax_sample": "self.version",
+                "drupal/ctools_custom_content": "self.version",
+                "drupal/ctools_plugin_example": "self.version",
+                "drupal/page_manager": "self.version",
+                "drupal/stylizer": "self.version",
+                "drupal/term_depth": "self.version",
+                "drupal/views_content": "self.version"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "description": "A library of helpful tools by Merlin of Chaos."
+        },
+        {
+            "name": "drupal/drupal",
+            "version": "7.31.0",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/drupal",
+                "reference": "b188e90ff3735804dd048779184c381dad163e45"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/drupal-7.31.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "replace": {
+                "drupal/aggregator": "self.version",
+                "drupal/bartik": "self.version",
+                "drupal/block": "self.version",
+                "drupal/blog": "self.version",
+                "drupal/book": "self.version",
+                "drupal/color": "self.version",
+                "drupal/comment": "self.version",
+                "drupal/contact": "self.version",
+                "drupal/contextual": "self.version",
+                "drupal/dashboard": "self.version",
+                "drupal/dblog": "self.version",
+                "drupal/field": "self.version",
+                "drupal/field_sql_storage": "self.version",
+                "drupal/field_ui": "self.version",
+                "drupal/file": "self.version",
+                "drupal/filter": "self.version",
+                "drupal/forum": "self.version",
+                "drupal/garland": "self.version",
+                "drupal/help": "self.version",
+                "drupal/image": "self.version",
+                "drupal/list": "self.version",
+                "drupal/locale": "self.version",
+                "drupal/menu": "self.version",
+                "drupal/minimal": "self.version",
+                "drupal/node": "self.version",
+                "drupal/number": "self.version",
+                "drupal/openid": "self.version",
+                "drupal/options": "self.version",
+                "drupal/overlay": "self.version",
+                "drupal/path": "self.version",
+                "drupal/php": "self.version",
+                "drupal/poll": "self.version",
+                "drupal/profile": "self.version",
+                "drupal/rdf": "self.version",
+                "drupal/search": "self.version",
+                "drupal/seven": "self.version",
+                "drupal/shortcut": "self.version",
+                "drupal/standard": "self.version",
+                "drupal/stark": "self.version",
+                "drupal/statistics": "self.version",
+                "drupal/syslog": "self.version",
+                "drupal/system": "self.version",
+                "drupal/taxonomy": "self.version",
+                "drupal/text": "self.version",
+                "drupal/toolbar": "self.version",
+                "drupal/tracker": "self.version",
+                "drupal/translation": "self.version",
+                "drupal/trigger": "self.version",
+                "drupal/update": "self.version",
+                "drupal/user": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-": "7.x-dev"
+                }
+            },
+            "description": "Handles general site configuration for administrators."
+        },
+        {
+            "name": "drupal/i18n",
+            "version": "7.1.5",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/i18n",
+                "reference": "203b604fc0a24ad1ee81cfdf094c8e0340ca23a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/i18n-7.x-1.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/block": "7.*",
+                "drupal/contact": "7.*",
+                "drupal/drupal": "7.*",
+                "drupal/field": "7.*",
+                "drupal/forum": "7.*",
+                "drupal/locale": "7.*",
+                "drupal/menu": "7.*",
+                "drupal/taxonomy": "7.*",
+                "drupal/translation": "7.*",
+                "drupal/variable": "7.*",
+                "drupal/variable_realm": "7.*",
+                "drupal/variable_store": "7.*"
+            },
+            "replace": {
+                "drupal/i18n_block": "self.version",
+                "drupal/i18n_contact": "self.version",
+                "drupal/i18n_field": "self.version",
+                "drupal/i18n_forum": "self.version",
+                "drupal/i18n_menu": "self.version",
+                "drupal/i18n_node": "self.version",
+                "drupal/i18n_path": "self.version",
+                "drupal/i18n_redirect": "self.version",
+                "drupal/i18n_select": "self.version",
+                "drupal/i18n_string": "self.version",
+                "drupal/i18n_sync": "self.version",
+                "drupal/i18n_taxonomy": "self.version",
+                "drupal/i18n_translation": "self.version",
+                "drupal/i18n_variable": "self.version"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "description": "Extends Drupal support for multilingual features."
+        },
+        {
+            "name": "drupal/panels",
+            "version": "7.3.4",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/panels",
+                "reference": "18319cd13a1c25a91e62f297d9367776956ac8d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/panels-7.x-3.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/ctools": ">=7.1.4",
+                "drupal/drupal": "7.*",
+                "drupal/i18n": "7.*",
+                "drupal/i18n_string": "7.*",
+                "drupal/i18n_translation": "7.*"
+            },
+            "replace": {
+                "drupal/i18n_panels": "self.version",
+                "drupal/panels_ipe": "self.version",
+                "drupal/panels_mini": "self.version",
+                "drupal/panels_node": "self.version"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-3.x": "7.3.x-dev"
+                }
+            },
+            "description": "Core Panels display functions; provides no external UI, at least one other Panels module should be enabled."
+        },
+        {
+            "name": "drupal/pathauto",
+            "version": "7.1.2",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/pathauto",
+                "reference": "e95ceafa6b4638084cc37aeaff268f117f84a111"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/pathauto-7.x-1.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "7.*",
+                "drupal/path": "7.*",
+                "drupal/token": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "description": "Provides a mechanism for modules to automatically generate aliases for the content they manage."
+        },
+        {
+            "name": "drupal/token",
+            "version": "7.1.5",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/token",
+                "reference": "72f3d1723fb5b2071a54d24fccad1f333c86c4fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/token-7.x-1.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "description": "Provides a user interface for the Token API and some missing core tokens."
+        },
+        {
+            "name": "drupal/variable",
+            "version": "7.2.5",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/variable",
+                "reference": "83c00d0daed27175cd8de9134dd047e617bcedf0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/variable-7.x-2.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "7.*",
+                "drupal/views": "7.*"
+            },
+            "replace": {
+                "drupal/variable_admin": "self.version",
+                "drupal/variable_example": "self.version",
+                "drupal/variable_realm": "self.version",
+                "drupal/variable_store": "self.version",
+                "drupal/variable_views": "self.version"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-2.x": "7.2.x-dev"
+                }
+            },
+            "description": "Variable Information and basic variable API"
+        },
+        {
+            "name": "drupal/views",
+            "version": "7.3.8",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/views",
+                "reference": "dd711929f95788e32a15b3d19fb32c0c7c0a263d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/views-7.x-3.8.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/ctools": "7.*",
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/views_ui": "self.version"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-3.x": "7.3.x-dev"
+                }
+            },
+            "description": "Create customized lists and queries from your database."
+        },
+        {
+            "name": "mnsami/composer-custom-directory-installer",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mnsami/composer-custom-directory-installer.git",
+                "reference": "2e15bec8098ebb9fac86a111f99b89fae281ff44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mnsami/composer-custom-directory-installer/zipball/2e15bec8098ebb9fac86a111f99b89fae281ff44",
+                "reference": "2e15bec8098ebb9fac86a111f99b89fae281ff44",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "*",
+                "php": ">=5.3"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": [
+                    "Composer\\CustomDirectoryInstaller\\LibraryPlugin",
+                    "Composer\\CustomDirectoryInstaller\\PearPlugin"
+                ],
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Composer\\CustomDirectoryInstaller": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mina Nabil Sami",
+                    "email": "mina.nsami@gmail.com"
+                }
+            ],
+            "description": "A composer plugin, to help install packages of different types in custom paths.",
+            "keywords": [
+                "composer",
+                "composer-installer",
+                "composer-plugin"
+            ],
+            "time": "2014-07-28 20:33:27"
+        },
+        {
+            "name": "symfony/filesystem",
+            "version": "v2.5.4",
+            "target-dir": "Symfony/Component/Filesystem",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Filesystem.git",
+                "reference": "a765efd199e02ff4001c115c318e219030be9364"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/a765efd199e02ff4001c115c318e219030be9364",
+                "reference": "a765efd199e02ff4001c115c318e219030be9364",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony Filesystem Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-09-03 09:00:14"
+        },
+        {
+            "name": "symfony/finder",
+            "version": "v2.5.4",
+            "target-dir": "Symfony/Component/Finder",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Finder.git",
+                "reference": "f40854d1a19c339c7f969f8f6d6d6e9153311c4c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/f40854d1a19c339c7f969f8f6d6d6e9153311c4c",
+                "reference": "f40854d1a19c339c7f969f8f6d6d6e9153311c4c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Finder\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony Finder Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-09-03 09:00:14"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "davidbarratt/drupal-structure": 20,
+        "davidbarratt/custom-installer": 15,
+        "davidbarratt/davidwbarratt": 20
+    },
+    "prefer-stable": false,
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}
