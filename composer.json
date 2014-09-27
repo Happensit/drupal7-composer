@@ -10,10 +10,6 @@
     {
       "type": "vcs",
       "url": "git@github.com:davidbarratt/davidwbarratt.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:davidbarratt/drupal-structure.git"
     }
   ],
   "require": {
