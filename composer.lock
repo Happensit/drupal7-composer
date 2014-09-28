@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "860e86d3d528dd7b0e87de022b3bfccb",
+    "hash": "75f6344881fef7715f70271ec5d218ec",
     "packages": [
         {
             "name": "davidbarratt/custom-installer",
@@ -612,7 +612,129 @@
         }
     ],
     "packages-dev": [
-
+        {
+            "name": "acdvorak/jquery.caret",
+            "version": "1.5.2",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:acdvorak/jquery.caret.git",
+                "reference": "v1.5.2"
+            },
+            "type": "library"
+        },
+        {
+            "name": "drupal/field_group",
+            "version": "7.1.4",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/field_group",
+                "reference": "1c4f45993d4651f0362a276ec5da949e13ec2c3a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/field_group-7.x-1.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/ctools": "7.*",
+                "drupal/drupal": "7.*",
+                "drupal/field": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "description": "Provides the ability to group your fields on both form and display."
+        },
+        {
+            "name": "drupal/filefield_sources",
+            "version": "7.1.9",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/filefield_sources",
+                "reference": "0c41206c7f158b37b2220bf33345173770a25221"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/filefield_sources-7.x-1.9.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "7.*",
+                "drupal/file": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "description": "Extends File fields to allow referencing of existing files, remote files, and server files."
+        },
+        {
+            "name": "drupal/insert_field",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/insert_field.git",
+                "reference": "47fdaa39fa9222852ab55e50e70a232c4f897485"
+            },
+            "require": {
+                "drupal/drupal": "7.x",
+                "drupal/libraries": "7.x",
+                "drupal/text": "7.x"
+            },
+            "replace": {
+                "drupal/insert_field_ui": "self.version"
+            },
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "David Barrattn",
+                    "email": "davidwbarratt@411675.no-reply.drupal.org",
+                    "homepage": "https://www.drupal.org/u/davidwbarratt"
+                }
+            ],
+            "description": "Insert Field provides a method of inserting fields into any text field on the current entity.",
+            "homepage": "https://www.drupal.org/project/insert_field",
+            "support": {
+                "issues": "https://www.drupal.org/project/issues/insert_field"
+            },
+            "time": "2014-09-28 03:31:09"
+        },
+        {
+            "name": "drupal/libraries",
+            "version": "7.2.2",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/libraries",
+                "reference": "744cd04d1c78a08d10b511f67904f0839baf94ec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/libraries-7.x-2.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "7.*",
+                "drupal/system": ">=7.7.11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-2.x": "7.2.x-dev"
+                }
+            },
+            "description": "Allows version-dependent and shared usage of external libraries."
+        }
     ],
     "aliases": [
 
@@ -621,7 +743,8 @@
     "stability-flags": {
         "davidbarratt/drupal-structure": 15,
         "davidbarratt/custom-installer": 15,
-        "davidbarratt/davidwbarratt": 20
+        "davidbarratt/davidwbarratt": 20,
+        "drupal/insert_field": 20
     },
     "prefer-stable": false,
     "platform": [
