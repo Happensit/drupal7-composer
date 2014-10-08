@@ -1,7 +1,7 @@
 {
   "name": "davidbarratt/drupal7",
   "description": "Drupal 7 Platform for David Barratt",
-  "licsense": "AGPL-3.0",
+  "license": "AGPL-3.0",
   "repositories": [
     {
       "type": "composer",
